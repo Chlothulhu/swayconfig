@@ -21,6 +21,8 @@ set $menu fuzzel --background=282828ee --selection-color=565656ee --selection-te
 include /etc/sway/config-vars.d/*
 default_border pixel 2
 
+
+
 ## Colours
 set $gray #282828
 set $red #a40000
@@ -99,6 +101,7 @@ input "type:keyboard" {
     bindsym $mod+s exec $menu
     bindsym $mod+f exec firefox
     bindsym $mod+e exec dolphin
+    bindsym Print exec flameshot gui
     
 
 	bindsym XF86MonBrightnessUp exec light -A 2
@@ -230,7 +233,6 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with grim
-    bindsym Print exec grim
 
 #
 # Status Bar:
