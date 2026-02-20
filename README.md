@@ -15,6 +15,9 @@ foot
 sway
 flameshot
 pavucontrol
+fuzzel
+firefox
+dolphin
 ```
 
 ## needed config commands
