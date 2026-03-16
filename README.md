@@ -20,10 +20,7 @@ pavucontrol
 fuzzel
 firefox
 dolphin
+breeze-cursor-theme
 ```
 
-## needed config commands
 
-```
-flameshot config --maincolor \#a40000
-```

@@ -22,6 +22,9 @@ include /etc/sway/config-vars.d/*
 default_border pixel 2
 
 
+# cursor
+
+seat seat0 xcursor_theme breeze_cursors
 
 ## Colours
 set $gray #282828
