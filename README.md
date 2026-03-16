@@ -13,7 +13,9 @@ light
 HackNerdFonts
 foot
 sway
-flameshot
+grimm
+slurp
+swappy
 pavucontrol
 fuzzel
 firefox

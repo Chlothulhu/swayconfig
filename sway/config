@@ -48,6 +48,8 @@ gaps outer 2
 # package `sway-backgrounds`. Installing this package drops a config file to
 # /etc/sway/config.d/
 output * bg /home/chloe/Pictures/Alan_Lee_The_of_Numenor.jpeg fill
+#output * bg /home/chloe/Pictures/SupermassiveBinaryBlackHoles.jpg fill
+#output * bg /home/chloe/Pictures/twilight.jpg fill
 #
 # Example configuration:
 #
@@ -101,7 +103,7 @@ input "type:keyboard" {
     bindsym $mod+s exec $menu
     bindsym $mod+f exec firefox
     bindsym $mod+e exec dolphin
-    bindsym Print exec flameshot gui
+    bindsym Print exec grim -g "$(slurp)" - | swappy -f -
     
 
 	bindsym XF86MonBrightnessUp exec light -A 2
