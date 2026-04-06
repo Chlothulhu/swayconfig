@@ -20,19 +20,22 @@ set $menu fuzzel --background=282828ee --selection-color=565656ee --selection-te
 
 include /etc/sway/config-vars.d/*
 default_border pixel 2
-
+titlebar_border_thickness 0
+default_floating_border pixel 2
+for_window [class="quakespasm"] floating disable
 
 # cursor
 
 seat seat0 xcursor_theme breeze_cursors
 
 ## Colours
+set $white #ffffff
 set $gray #282828
 set $red #a40000
 
 ## Window Colours
-client.focused   $red  $red $red $red $red
-client.unfocused   $gray  $gray $gray
+client.focused   $red  $red $white $red $red
+client.unfocused   $gray  $gray $white $gray $gray
 client.background        $gray
 
 
@@ -50,7 +53,8 @@ gaps outer 2
 # This is commented in Debian, because the Sway wallpaper files are in a separate
 # package `sway-backgrounds`. Installing this package drops a config file to
 # /etc/sway/config.d/
-output * bg /home/chloe/Pictures/Alan_Lee_The_of_Numenor.jpeg fill
+#output * bg /home/chloe/Pictures/Alan_Lee_The_of_Numenor.jpeg fill
+output * bg /home/chloe/Pictures/blackhole.png fill
 #output * bg /home/chloe/Pictures/SupermassiveBinaryBlackHoles.jpg fill
 #output * bg /home/chloe/Pictures/twilight.jpg fill
 #
@@ -106,6 +110,7 @@ input "type:keyboard" {
     bindsym $mod+s exec $menu
     bindsym $mod+f exec firefox
     bindsym $mod+e exec dolphin
+    bindsym $mod+m exec cvlc Music/klaxon-multitons-tour-de-france.mp3 --no-loop --play-and-exit
     bindsym Print exec grim -g "$(slurp)" - | swappy -f -
     
 
